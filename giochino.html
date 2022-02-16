@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;
+<body>
+
+<div class="w3-container w3-teal">
+  <h1>Mia APP</h1>
+</div>
+
+ <style>
+    p{
+    color: black;
+    font-size: 70px;    
+    }
+    </style>
+  </head>
+  <body>
+    <h2>ESERCIZIO BOTTONE CONTA CLICK</h2>
+ 
+    <p id="demo">
+     
+    </p>
+    <p id="demo"></p>
+    <p id="out"></p>
+    <p id="nclick">0</p>
+    <button type="button" onclick="count()">clicca qui</button>
+   
+    <script>
+      let i = 0;
+      let start = Date.now();
+      let counter = 0;
+      function count() {
+       
+        counter++;
+        document.getElementById("nclick").innerHTML = counter.toString();
+      }
+   
+
+     
+   
+
+     function tempo(){
+     contatore++;
+     document.getElementById("demo").innerHTML = contatore +" ";    
+     }
+
+     function myStopFunction() {
+         clearInterval(myInterval);
+     }
+
+    </script>
+
+
+
+<div class="w3-container">
+  <p>A car is a wheeled, self-powered motor vehicle used for transportation.</p>
+</div>
+
+<div class="w3-container w3-teal">
+  <p>My footer information</p>
+</div>
+
+</body>
+</html>
