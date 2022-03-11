@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="CaricaArray(999)">Lancia 999 Numeri</button>
+    <p id="output3"></p> 
+    <button onclick="CercaMasiimo()">Conta il massimo</button>
+
+
+
+    <script>
+        function CaricaArray(n) {
+            let dado=0;
+            let casuale=0;
+            let str="";
+            for(let i=0;i<n;i++)
+            {
+            casuale=Math.random();
+            dado=Math.round(casuale*998)+1;
+            str=str+" "+ dado;  
+            }
+            document.getElementById("output3").innerHTML=str;
+            
+        }
+        
+    </script>
+</body>
+</html>
